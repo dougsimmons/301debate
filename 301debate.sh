@@ -1,5 +1,6 @@
 # bin bash slash baby!
 # 301debate.sh v0.2 by Doug Simmons
+# apache license, or whatever
 echo
 echo 301 www redirects with the top trafficked sites, measuring added redirecting latency with this:
 echo curl -sL https://{www.,}example.com -o\ /dev/null{,\ } -w "%{time_redirect}\n" -o/dev/null{,}
