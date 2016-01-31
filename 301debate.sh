@@ -1,6 +1,6 @@
 # bin bash slash baby!
-# 301debate.sh v0.2 by Doug Simmons
-# apache license, or whatever
+# 301debate.sh v0.2 by Doug Simmons / github@hmm.nyc
+# apache license, or whatever, MIT maybe, https://hmm.nyc
 echo
 echo 301 www redirects with the top trafficked sites, measuring added redirecting latency with this:
 echo curl -sL https://{www.,}example.com -o\ /dev/null{,\ } -w "%{time_redirect}\n" -o/dev/null{,}
@@ -50,4 +50,8 @@ echo
 
 echo linkedin.com
 curl -sL https://{www.,}linkedin.com -o\ /dev/null{,\ } -w "%{time_redirect}\n" -o/dev/null{,}
+echo
+
+echo hmm.nyc
+curl -sL https://{www.,}hmm.nyc -o\ /dev/null{,\ } -w "%{time_redirect}\n" -o/dev/null{,}
 echo
